@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
      <link rel="icon" type="image/gif" href="/assests/lg3.png" sizes="16x16" />
     <!-- Bootstrap CSS -->
@@ -21,7 +21,7 @@
        display: inline-block;
        position: relative;
        transition: 0.5s;
-     }
+     	}
      
         .mybtn span:after {
          content: '\00bb';
@@ -30,11 +30,11 @@
         top: 0;
          left: -20px;
          transition: 0.5s;
-      }
+      	}
      
-           .mybtn:hover span {
-           padding-left: 25px;
-       		}
+	 .mybtn:hover span {
+	   padding-left: 25px;
+	}
      
         .mybtn:hover span:after {
 	       opacity: 1;
@@ -44,8 +44,6 @@
        </style>
     </head>
     <body>
-    	
-        <%-- <h3 th:if='${error}' th:text='${error}' style='color: red;'></h3> --%>
         <c:choose>
 		    <c:when test="${error}">
 		       <h3>Error</h3> 
