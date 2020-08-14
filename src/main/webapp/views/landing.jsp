@@ -10,19 +10,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
-     <link rel="icon" href="/assests/lg3.png" type="image/gif" sizes="16x16">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+   <link rel="icon" href="/assests/lg3.png" type="image/gif" sizes="16x16">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-
-   
-
     <title>V CABS</title>
- 
-  <style type="text/css">
-                                                                      
+  <style type="text/css">                                                        
    .head{
         height: 540px;
         background-image: url("/assests/landimg3.jpg");
@@ -31,14 +23,8 @@
         background-repeat: no-repeat;
         background-position: center center;
         margin-bottom: 30px;
-        text-align: center;
-
-        
-                                                                                
+        text-align: center;                                                                          
       }
-
-   
-
 .head h1{
 
   size: 500px;
@@ -53,15 +39,11 @@
   letter-spacing: 5px;
    display: inline-block;
         color: white;
-
-
-
 }
       .head p{
         font-size: 28px;
         padding-left: 13px;
         color: white;
-        
       }
 
       .head img{
