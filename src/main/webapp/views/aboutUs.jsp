@@ -269,7 +269,7 @@
 <div class="last">
  &copy; V CABS 2020. All Rights Reserved.
   <div class="footicon" style="margin-bottom: 10px;">
-    <a href="https://www.facebook.com/profile.php?id=100012159498460"><i style="font-size:28px; margin-right: 10px; " class="fa">&#xf082;</i></a>
+    <a href=""><i style="font-size:28px; margin-right: 10px; " class="fa">&#xf082;</i></a>
     <a href=""><i style="font-size:28px; margin-right: 10px;" class="fa">&#xf099;</i></a>
     <a href=""><i style="font-size:28px;" class="fa">&#xf16d;</i></a>
  </div>
