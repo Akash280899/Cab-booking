@@ -244,54 +244,6 @@ ResultSet resultset = statement.executeQuery(query); %>
 </div>
 
 
-
-
-  
-    
-
-<%-- <div class="container">
- <div class="row">
-  <div class="col sm-6 ">
-   <div class="card " style="margin-top: 30px;">
-
-    <div class="card-header"><h4>Riding Location</h4> </div>
-  
-      <div class="card-body">
-   
-    
-    <form>
-   <div class="form-row">
-    <div class="form-group col-md-12">
-      <label ><i class="fas fa-circle" style="color: green;"></i>Picked Location</label> <br>
-      <strong><%=resultset.getString(5)  %></strong>
-      <input type="hidden" name="city" id="city" value=""/>
-    </div>
-    <div class="form-group col-md-12">
-      <label ><i class="fas fa-circle" style="color: red;"></i>Destination Location</label> <br>
-      <strong><%=resultset.getString(6)  %></strong>
-    </div>
-  </div>
-
-<button id="btnSubmit" onclick="return calcRoute();" type="button" class="btn btn-primary " style="vertical-align:middle">Track Ride</button>
-     </form>
-    </div>
-   </div>
-  </div>
-   
-   <div class="col-sm-6">
-     <div class="card" style="margin-top: 30px;">
-      <div class="card-body" style="margin: 0;">
-         
-        <div id="map" class="z-depth-1-half map-container" style="height: 500px"></div>
- 
-         
-      </div>
-    </div>
-   </div>
-
- </div>
-</div> --%>
-
 <br>
 <!-- Footer starts-->
 <!-- 
