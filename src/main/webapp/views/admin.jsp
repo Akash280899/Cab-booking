@@ -162,7 +162,8 @@
             <p class="bounceIn animated">Experience the best Rides in your city.</p> 
             <button type="button" class="btn btn-success btn-lg mybtn" style="vertical-align:middle" data-toggle="modal" data-target="#exampleModalCenter"><span>Add Driver</span></button> 
             <button type="button" class="btn btn-danger btn-lg mybtn" style="vertical-align:middle" data-toggle="modal" data-target="#exampleModalCenter1"><span>Delete Driver</span></button>
-          	</c:when>
+            <button onclick="location.href='/userDetails';" type="button" class="btn btn-primary btn-lg mybtn" style="vertical-align:middle" ><span>See Booking Details</span></button>
+		  </c:when>
           	<c:otherwise>
           		<p class="bounceIn animated">Login to Continue...</p> 
           	</c:otherwise>
