@@ -175,10 +175,10 @@ public class HomeController {
 		System.out.println("start called");
 		return "CustomerFinal";
 	}
-	@RequestMapping("/rough")
-	public String rough()
-	{
-		return "rough";
+	
+	@RequestMapping("/userDetails")
+	public String userDetails() {
+		return "userDetails";
 	}
 	
 	@RequestMapping("/DriverFinal")
