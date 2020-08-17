@@ -7,7 +7,7 @@ Technologies used:
 * Middle-ware : `Spring`
 * Back-end : `MySql`
 
-* Software used: `STS(Spring Tool Suite)`
+* Software used: `STS(Spring Tool Suite), WampServer(MySQL)`
 * Payment API: `Stripe API`
 * Maps API: `Google Maps`
 
