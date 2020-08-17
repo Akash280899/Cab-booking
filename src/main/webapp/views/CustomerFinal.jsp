@@ -88,7 +88,8 @@ ResultSet resultset = statement.executeQuery(query); %>
         String driverName = resultset.getString(10);
         String carNumber = resultset.getString(11);
         String otp = resultset.getString(12);
-        String driverImage = resultset.getString(13);%>
+        String driverImage = resultset.getString(13);
+	String bookingid = resultset.getString(15);%>
     <div class="card maincard">
   <div class="card-body">
  <%-- result is : <% out.printl(com.akj.carproj.LatLng.Coordinates.temp()); %> --%>
@@ -97,7 +98,7 @@ ResultSet resultset = statement.executeQuery(query); %>
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Driver's Details</h5>
+        <h5 class="card-title">Driver's Details (Booking Id: #<%=bookingid %>)</h5>
         <br>
         <%-- <body onload="startCall('<%= temp3 %>','<%= temp4 %>','<%= location%>')"></body> --%>
          <p><img id="driverImage" src="<%= driverImage%> " width="100" height="100" class="d-block " style="margin: auto;" ></p>
