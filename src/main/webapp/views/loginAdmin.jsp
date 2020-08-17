@@ -16,7 +16,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i" rel="stylesheet">
 <style>
 body {
-    background:url("../assests/cabCustomer.jpg") fixed;
+    background:url("../assests/cabAdmin.jpg") fixed;
     background-size: cover;
 	text-align:center;
 }
