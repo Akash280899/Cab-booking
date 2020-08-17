@@ -22,15 +22,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-
-	<link rel="stylesheet" type="text/css" href="../css/adminCss/vendor/bootstrap/css/bootstrap.min.css">
-
-	<link rel="stylesheet" type="text/css" href="../css/adminCss/vendor/animate/animate.css">
-
-	<link rel="stylesheet" type="text/css" href="../css/adminCss/vendor/select2/select2.min.css">
-
 	<link rel="stylesheet" type="text/css" href="../css/adminCss/vendor/perfect-scrollbar/perfect-scrollbar.css">
-
 	<link rel="stylesheet" type="text/css" href="../css/adminCss/css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/adminCss/css/main.css">
     
@@ -142,14 +134,7 @@
 				</div>
 			</div> 
 
-<!--===============================================================================================-->	
-	<script src="../css/adminCss/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../css/adminCss/vendor/bootstrap/js/popper.js"></script>
-	<script src="../css/adminCss/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="../css/adminCss/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
+
 	<script src="../css/adminCss/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 	<script>
 		$('.js-pscroll').each(function(){
@@ -159,11 +144,7 @@
 				ps.update();
 			})
 		});
-			
-		
 	</script>
-<!--===============================================================================================-->
 	<script src="../css/adminCss/js/main.js"></script>
-
 </body>
 </html>
