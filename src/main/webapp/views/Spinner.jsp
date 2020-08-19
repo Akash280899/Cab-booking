@@ -72,7 +72,7 @@ function check() {
 	ResultSet resultset = statement.executeQuery(query); 
 	       
 	        while(resultset.next()){ 
-			status = resultset.getString(16);
+			status = resultset.getString(17);
 			random = resultset.getString(15);} %>
 			var ans1 = "<%=status %>";
 			var ans2 = "<%=random %>";
