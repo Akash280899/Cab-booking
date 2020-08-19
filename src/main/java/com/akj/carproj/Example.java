@@ -29,8 +29,7 @@ public class Example {
 		
 	try {
 		// Construct data
-		//String numberTemp = "9042068681";
-		String apiKey = "apikey=" + "jxTl4XXMWtg-uoOpUnOGGSyiTdD8i9H8OjmN6OYs3Z";
+		String apiKey = "apikey=" + "API_KEY";
 		String message = "&message=" + "Thanks for using V Cabs!!Your booking is confirmed.Share this OTP number: " +otpTemp + " when driver arrives to start the ride.";
 		String sender = "&sender=" + "TXTLCL";
 		String numbers = "&numbers=" + numberTemp;
