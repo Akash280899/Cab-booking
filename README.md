@@ -16,6 +16,6 @@ This application manages the customer and driver as user friendly.
 
 # Live Project Video => https://vimeo.com/448915703 
 
-For more Info about `Stripe API`: https://stripe.com/docs
-For more Info about `Maps API`: https://developers.google.com/maps/documentation
-For more Info about `Textlocal API`: https://control.textlocal.in/
+* For more Info about `Stripe API`: https://stripe.com/docs
+* For more Info about `Maps API`: https://developers.google.com/maps/documentation
+* For more Info about `Textlocal API`: https://control.textlocal.in/
