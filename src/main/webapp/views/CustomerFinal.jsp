@@ -8,21 +8,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="icon" href="assests/lg3.png" type="image/gif" sizes="16x16">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <title>V CABS</title>
-
    <style type="text/css">
-
     body{
       background-image: url("assests/img3.jpg");
       background-position: center;
@@ -30,40 +22,23 @@
       background-size: cover;
       opacity: 0.85;
     }
-        /* #map {
-        height:600px;
-        width: 550px;
-      } */
-      /* Optional: Makes the sample page fill the window. */
-     /*  .gps {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      } */
      .maincard{
       margin: 50px;
 
      }
-
      .card-title{
       font-style: italic;
       text-decoration: underline;
      }
-
      p{
       font-weight: bold;
       font-size: 20px;
       font-family: lato;
      }
-
      .mybtn{
       border-radius: 0;
      }
-
-
-
    </style>
-
   </head>
   <body onload="initialize()">
   <% int current = 0;
@@ -74,7 +49,6 @@ String location = null;
 String temp3 = null;
 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/spring","root","");
 statement = connection.createStatement(); 
-/* String query = "SELECT * From booking,customer where booking.driver_id=1 and booking.booking_id = customer.booking_id ORDER BY customer.id DESC LIMIT 1" ; */
 String query = "SELECT * From booking,customer where booking.booking_id = customer.booking_id ORDER BY customer.id DESC LIMIT 1" ;
 ResultSet resultset = statement.executeQuery(query); %>
         <%
@@ -89,18 +63,15 @@ ResultSet resultset = statement.executeQuery(query); %>
         String carNumber = resultset.getString(11);
         String otp = resultset.getString(12);
         String driverImage = resultset.getString(13);
-	String bookingid = resultset.getString(15);%>
+        String bookingid = resultset.getString(15);%>
     <div class="card maincard">
   <div class="card-body">
- <%-- result is : <% out.printl(com.akj.carproj.LatLng.Coordinates.temp()); %> --%>
-
    <div class="row">
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Driver's Details (Booking Id: #<%=bookingid %>)</h5>
         <br>
-        <%-- <body onload="startCall('<%= temp3 %>','<%= temp4 %>','<%= location%>')"></body> --%>
          <p><img id="driverImage" src="<%= driverImage%> " width="100" height="100" class="d-block " style="margin: auto;" ></p>
         <div id="driverName" style="font-weight: bold;">
         Driver Name : <%= driverName %>
@@ -110,25 +81,18 @@ ResultSet resultset = statement.executeQuery(query); %>
         <div id="vehicleType" style="font-weight: bold;">VehicleType: <%= vehicleType %></div><br>
         <div id="fare" style="font-weight: bold;">Fare: <%= fare %>/-</div> <br>
         <div id="carNumber" style="font-weight: bold;">Car Number: <%= carNumber %></div>
-
         <br>
-         
          <button id="btnSubmit" onclick="return calcRoute();" type="button" class="btn btn-primary btn-lg btn-block mybtn" style="vertical-align:middle">Track Ride</button>
        	<button id="btnCurrent" onclick="currentRide()" type="button" class="btn btn-primary btn-lg btn-block mybtn" style="vertical-align:middle">Track Your Ride</button>
         <a href="/delete/<%= customerId %>" type="button" class="btn btn-danger btn-lg btn-block mybtn">Cancel Ride</a>
       </div>
     </div>
   </div>
- 
-
-	 
-
+  
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-       <!-- Maps Goes Here-->
     <div id="map" class="z-depth-1-half map-container" style="height: 500px"></div>
-
       </div>
     </div>
   </div>
@@ -136,73 +100,41 @@ ResultSet resultset = statement.executeQuery(query); %>
 
  <div class="card" style="margin-top: 20px; font-style: italic;">
       <div class="card-body">
-        
         <p style="font-size: 24px;"><img src="assests/lg3.png" width="90" height="90" class="d-inline-block "><u class="float-right" >Welcome .. <p>${sessionScope.Customerusername }</p></u></p><br>
         <p>We Hope You will get your ride Fast.</p>
-
         <p>We Welcome all of your Feedbacks which help us to become better..</p>
-
         <p>Thank You</p>
-
-       
       </div>
-
-
-
   </div>
 </div>
 </div>
  <% } %>
-<script type="text/javascript">
-  
-$("#backhome").hover(function(){
-
-alert("This will not Cancel Your Ride");
-
-});
-
-
-</script>
     
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   	<script src="http://maps.google.com/maps/api/js?key=AIzaSyD1R5QWrqEMfU9qPpah3ufkQmeSWBEVtRo&sensor=true&libraries=geometry"></script>
  	<script type ="text/javascript" src="js/script.js"></script> 
- <script>
- $(document).ready(function() {
-	 $('#btnCurrent').prop('disabled', true);
- });
-$('#btnSubmit').click(function(){
-	   $(this).prop('disabled', true);
-	   $('#btnCurrent').prop('disabled', false);	
-	});  
-
-
-	
+	 <script>
+	 $(document).ready(function() {
+		 $('#btnCurrent').prop('disabled', true);
+	 });
+	$('#btnSubmit').click(function(){
+		   $(this).prop('disabled', true);
+		   $('#btnCurrent').prop('disabled', false);	
+		});  
  var cityName = "";
 	var value = "<%= location %>";
 	var vehicleType = "<%= vehicleType%>";
 	var pickupDest = "<%=temp3 %>";
-	console.log("pik"+pickupDest);
-	/* alert(pickupDest); */
-
-	console.log(typeof(value) + "value");
 	var value = value.split(",");
 	var lat1 = value[0];
 	var lng1 = value[1]; 
-	 var lat=lat1;
-	 var lon=lng1;
-	 var ansvalue;
- 
- displayLocation(lat,lon);
-	
+    var lat=lat1;
+    var lon=lng1;
+    var ansvalue;
+    displayLocation(lat,lon);
 
-
- 
  const autoAns =  vehicleType.localeCompare("auto");
 	const microAns = vehicleType.localeCompare("micro");
 	const miniAns = vehicleType.localeCompare("mini");
@@ -262,12 +194,7 @@ $('#btnSubmit').click(function(){
 		    anchor: new google.maps.Point(10, 25) // orig 10,50 back of car, 10,0 front of car, 10,25 center of car
 		}; 
 	}
- 
- 
 
-
-
- 
  function displayLocation(latitude,longitude){ 
  	var geocoder;
      geocoder = new google.maps.Geocoder();
