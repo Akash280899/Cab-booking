@@ -106,7 +106,7 @@
 								        temp2 =  resultset.getString(2) ;
 								        temp3 =  resultset.getString(3); 
 								        temp4 =  resultset.getString(7); 
-								        temp5 =  resultset.getString(13); 
+								        temp5 =  resultset.getString(14); 
 								       	%>
 								<tr class="row100 body">
 									<td class="cell100 column1"><%=temp1 %></td>
