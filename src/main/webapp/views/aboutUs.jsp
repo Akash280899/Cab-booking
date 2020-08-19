@@ -3,50 +3,31 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
      <title>V CABS</title>
 	 <link rel="icon" href="/assests/lg3.png" type="image/png" sizes="16x16">
-
-  <!--font awesome -->
-   
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-
      <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-
-
-
     <style type="text/css">
-      
-
        .space{
         margin-bottom: 50px;
        }
-
 
       .location{
         margin-right: 30px;
         margin-top: 30px;
         display: inline-block;
-
       }
 
       .logo{
         margin-top: 15px;
         margin-bottom: 15px;
-
       }
-
 
      .footicon{
       float: right;
@@ -55,19 +36,13 @@
       padding-right: 20px;
      }
 
-
-        .whyR div img{
-            height: 110px;
-            cursor: pointer;
-        }
-        .whyR :hover{
-            color: green;
-        }
-
-     
-
-     
-
+     .whyR div img{
+         height: 110px;
+         cursor: pointer;
+     }
+     .whyR :hover{
+         color: green;
+     }
     </style>
 
   </head>
@@ -76,7 +51,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- Image and text -->
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="landing.html">
+  <a class="navbar-brand" href="/landing">
     <img src="assests/lg3.png" width="30" height="30" class="d-inline-block align-top" ><strong>V CABS</strong></a>
 </nav>
   
@@ -108,9 +83,6 @@
       </li>
       
     </ul>
-
-   
-    
   </div>
 </nav>
 
@@ -130,7 +102,6 @@
          <p class="card-text"> Designation : Driver</p>
         <p class="card-text"> Car Number : TN 01 CB 0256</p>
         <p class="card-text"> Rating : 3/5</p>
-        <!-- <a href="#" class="btn btn-primary">contact</a> -->
       </div>
     </div>
   </div>
@@ -142,8 +113,6 @@
         <p class="card-text"> Designation : Driver</p>
         <p class="card-text"> Car Number: TN 25 JK 5269</p>
         <p class="card-text"> Rating: 4/5</p>
-        
-        <!-- <a href="#" class="btn btn-primary">Contact</a> -->
       </div>
     </div>
   </div>
@@ -155,7 +124,6 @@
          <p class="card-text"> Designation : Driver</p>
         <p class="card-text"> Car Number : TN 10 JB 2258</p>
         <p class="card-text"> Rating :4.5/5</p>
-        <!-- <a href="#" class="btn btn-primary">Contact</a> -->
       </div>
     </div>
   </div>
@@ -175,9 +143,6 @@
             <h3 style="font-weight: lighter;">Tap a button, get a ride</h3>
             <p>Choose your ride and set your location. You'll see your driver's picture and vehicle details, and can track their arrival on the map.</p>
         </div>
-         
-
-         
          <div class="col-md-4">
             <h3 style="font-weight: lighter;">Always on, always available</h3>
             <p>No phone calls to make, no pick-ups to schedule. With 24/7 availability, request a ride any time of day, any day of the year.</p>
@@ -191,7 +156,6 @@
 </div>
 </div>
 
- 
 <div class="container">
     <br>
         <p  style="font-weight: lighter;color: gainsboro;">The best way to travel to your destination </p>
@@ -273,13 +237,9 @@
     <a href="https://twitter.com/AkashIyer28"><i style="font-size:28px; margin-right: 10px;" class="fa">&#xf099;</i></a>
     <a href="https://www.instagram.com/akash_iyer_/"><i style="font-size:28px;" class="fa">&#xf16d;</i></a>
  </div>
-
 </div>
 
-
 <!--Footer Ends-->
-
-   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
