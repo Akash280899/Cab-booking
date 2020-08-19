@@ -3,7 +3,7 @@ package com.akj.carproj;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -61,9 +61,10 @@ public class HomeController {
 	}
 	
 	@PostMapping("/save-user") 
-	public String register(@ModelAttribute Main user,BindingResult bindingresult,HttpServletRequest request) {
+	public String register(@ModelAttribute Main user,BindingResult bindingresult,HttpServletRequest request,HttpSession session) {
 		System.out.println("post saveuser called");
 		mainDao.saveMyUser(user);
+		//session.setAttribute("userPhone",user.getPhonenumber()); 
 		//request.setAttribute("mode", "MODE_HOME");
 		return "index";
 	}
@@ -175,6 +176,7 @@ public class HomeController {
 		System.out.println("start called");
 		return "CustomerFinal";
 	}
+
 	
 	@RequestMapping("/userDetails")
 	public String userDetails() {
@@ -193,11 +195,5 @@ public class HomeController {
 	@RequestMapping("/CustomerFinal")
 	public String customer() {
 		return "CustomerFinal";
-	}
-	
-	
-	
-
-	
-		
+	}	
 }
