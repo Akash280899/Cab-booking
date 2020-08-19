@@ -9,27 +9,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 	<title>V CABS</title>
-     <link rel="icon" type="image/gif" href="/assests/lg3.png" sizes="16x16" />
-    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/gif" href="/assests/lg3.png" sizes="16x16" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
 	<link rel="stylesheet" type="text/css" href="../css/adminCss/vendor/perfect-scrollbar/perfect-scrollbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/adminCss/css/util.css">
 	<link rel="stylesheet" type="text/css" href="../css/adminCss/css/main.css">
     
 <style>
-.nav_p{
 
-     
+	.nav_p{ 
       font-size: 25px;
       color: white;
       margin-top: 5px;
@@ -54,12 +49,9 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
    <ul class="navbar-nav mr-auto">
-
       <li class="nav-item active">
         <a class="nav-link" id="pass" href="/admin"><i class="fas fa-home"></i><strong> HOME <span class="sr-only">(current)</span></strong></a>
       </li>
-
-      
     </ul>
    <p class="nav_p">
    <c:set var="log" scope="session" value="${sessionScope.logged2 }"/>  
@@ -98,7 +90,6 @@
 						<table>
 							<tbody>
 							<%
-
 								String temp1 =  null;
 								String temp2 =   null;
 								String temp3 = null;
@@ -109,7 +100,6 @@
 								statement = connection.createStatement(); 
 								String query = "SELECT * FROM customer ORDER BY id DESC LIMIT 25;" ;
 								ResultSet resultset = statement.executeQuery(query); %>
-								
 								        <% 
 								        while(resultset.next()){ 
 								        temp1 = resultset.getString(12);
@@ -119,7 +109,6 @@
 								        temp5 =  resultset.getString(13); 
 								       	%>
 								<tr class="row100 body">
-								
 									<td class="cell100 column1"><%=temp1 %></td>
 									<td class="cell100 column2"><%=temp2 %></td>
 									<td class="cell100 column3"><%=temp3 %></td>
@@ -133,8 +122,6 @@
 					</div>
 				</div>
 			</div> 
-
-
 	<script src="../css/adminCss/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 	<script>
 		$('.js-pscroll').each(function(){
