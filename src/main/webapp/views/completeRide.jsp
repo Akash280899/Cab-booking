@@ -6,33 +6,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <link rel="icon" href="assests/lg3.png" type="image/gif" sizes="16x16">
-
-  <!--font awesome -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-   
-<!--Animate.css-->
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
- 
-
-    <title>V Cabs-driver</title>
-
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <title>V Cabs-driver</title>
     <style type="text/css">
       
       .head{
@@ -43,8 +28,6 @@
         background-repeat: no-repeat;
         background-position: center center;
         margin-bottom: 30px;
-        
-
       }
 
       .head h1{
@@ -58,7 +41,6 @@
         font-size: 28px;
         padding-left: 13px;
         color: white;
-        
       }
 
       .location{
@@ -70,7 +52,6 @@
       .logo{
         margin-top: 15px;
         margin-bottom: 15px;
-
       }
 
 
@@ -82,8 +63,6 @@
      }
 
      .nav_p{
-
-     
       font-size: 25px;
       color: white;
       margin-top: 5px;
@@ -95,11 +74,9 @@
      }
 
      .mybtn{
-      
       margin-left: 15px;
       height: 40px;
       font-weight: bold;
-
      }
 
      .detail{
@@ -113,23 +90,23 @@
        transition: 0.5s;
      }
      
-        .mybtnConfirm span:after {
-         content: '\00bb';
-        position: absolute;
-         opacity: 0;
-        top: 0;
-         right: -20px;
-         transition: 0.5s;
-      }
-     
-           .mybtnConfirm:hover span {
-           padding-right: 25px;
-       		}
-     
-        .mybtnConfirm:hover span:after {
-	       opacity: 1;
-	       right: 0;
-     	}
+     .mybtnConfirm span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+     }
+  
+     .mybtnConfirm:hover span {
+       padding-right: 25px;
+ 	}
+  
+     .mybtnConfirm:hover span:after {
+	     opacity: 1;
+	     right: 0;
+  	}
 
     </style>
 
@@ -140,11 +117,9 @@ ResultSet rs = null;
 Statement statement = null;
 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/spring","root","");
 statement = connection.createStatement(); 
-/* String query = "SELECT * From booking,customer where booking.driver_id=1 and booking.booking_id = customer.booking_id ORDER BY customer.id DESC LIMIT 1" ; */
 String query = "SELECT * From booking,customer where booking.booking_id = customer.booking_id ORDER BY customer.id DESC LIMIT 1" ;
 ResultSet resultset = statement.executeQuery(query); %>
         <% while(resultset.next()){ %>
-
       <% String temp3 =  resultset.getString(5) ;
         String temp4 =  resultset.getString(6);
         String vehicleType = resultset.getString(7);%>
@@ -161,52 +136,29 @@ ResultSet resultset = statement.executeQuery(query); %>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-
       <li class="nav-item active">
         <a class="nav-link" id="pass" href="/driver"><i class="fas fa-home"></i><strong> HOME <span class="sr-only">(current)</span></strong></a>
       </li>
-
-
     </ul>
-     
 	<p class="nav_p"><img src="../assests/lg3.png" width="35" height="35" class="d-inline-block align-top" ><strong style=" font-family: lato;">  Hello..  </strong><span>${sessionScope.Driverusername }</span>
          <button onclick="location.href='${pageContext.request.contextPath }/logout'" type="button" class="btn btn-danger mybtn">Log Out</button></p>
-
-  
-   
-
   </div>
 </nav>
-
  <div class="head">
-   
    <h1 class="fadeInUp animated">Reliable. Safe. Transparent.</h1>
-   
   <figure class="figure  float-right location fadeIn animated d-md-none d-lg-block d-sm-none d-none ">
-
-   
-
 </figure>
-
-
  </div>
 <c:set var="driverId" scope="session" value="${sessionScope.DriverId }"/>  
 	<c:set var="ID" scope="session" value="${sessionScope.id }"/>  
-
-  
-    
 <c:choose>
   <c:when test="${driverId == ID}">	 
 <div class="container">
  <div class="row">
   <div class="col sm-6 ">
    <div class="card " style="margin-top: 30px;">
-
     <div class="card-header"><h4>Completed Ride</h4> </div>
-  
       <div class="card-body">
-   
-    
      <form action="/completeRide" method="post"> 
    <div class="form-row">
     <div class="form-group col-md-12">
@@ -238,7 +190,6 @@ ResultSet resultset = statement.executeQuery(query); %>
 		  %>   
     </div>
   </div>
-<!--   <button id="btnPayment" type="button" class="btn btn-success " style="vertical-align:middle">Proceed to Payment</button> -->
      </form> 
     </div>
    </div>
@@ -247,9 +198,7 @@ ResultSet resultset = statement.executeQuery(query); %>
    <div class="col-sm-6">
      <div class="card" style="margin-top: 30px;">
       <div class="card-body" style="margin: 0;">
-         
           <div class="card-header"><h4>Payment&ensp;<strong>Rs.<%=resultset.getString(8)%>/-</strong></h4> </div>
-  
       <div class="card-body">
    <div class="form-row">
     <!-- <div class="form-group col-md-3"> 
@@ -260,16 +209,14 @@ ResultSet resultset = statement.executeQuery(query); %>
   	</div> -->
   </div>
   <div class="form-row">
-  <div class="form-group col-md-3">
+  <div class="form-group col-md-6">
       <label ><i class="fas fa-money-check" style="color: gray;">&nbsp;</i>Online Payment</label> <br>
    </div>
-    <div class="form-group col-md-3">
+    <div class="form-group col-md-6">
      <a href="/driverPayment"><button type="button" class="btn btn-secondary btn-lg mybtnConfirm" style="vertical-align:middle"><span>Confirm</span></button></a> 
   	</div>
    </div>
     </div>
- 
-         
       </div>
     </div>
    </div>
@@ -283,10 +230,6 @@ ResultSet resultset = statement.executeQuery(query); %>
 
 <div class="jumbotron jumbotron-fluid" style="background-color: #282C35; color: white;">
 </div>
-
-
-
-
 <div class="last">
  &copy; V CABS 2020. All Rights Reserved.
   <div class="footicon" style="margin-bottom: 10px;">
