@@ -2,6 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %> 
 <%@ page import="java.io.*" %> 
+<%@ page import="com.akj.carproj.Example" %>  
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!doctype html>
@@ -109,7 +110,7 @@ ResultSet resultset = statement.executeQuery(query);
          vehicleType = resultset.getString(7);
         bookingid = resultset.getString(15);
         session.setAttribute("id",resultset.getString(14));
-        session.setAttribute("status",resultset.getString(16)); }%>
+        session.setAttribute("status",resultset.getString(17)); }%>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- Image and text -->
 <nav class="navbar navbar-dark bg-dark">
@@ -119,7 +120,7 @@ ResultSet resultset = statement.executeQuery(query);
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -179,6 +180,7 @@ ResultSet resultset = statement.executeQuery(query);
       stmnt.executeUpdate("UPDATE customer set status='booked' ORDER BY customer.id DESC LIMIT 1");
       Statement stmnt1 = conn.createStatement();
       stmnt1.executeUpdate("UPDATE driver set status='riding' where driver_id= '"+idtemp+"'");
+      Example.main(null);
     }
     catch (Exception e) {
     } 
