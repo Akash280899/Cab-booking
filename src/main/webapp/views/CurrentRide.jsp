@@ -5,31 +5,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
      <link rel="icon" href="assests/lg3.png" type="image/gif" sizes="16x16">
-
-  <!--font awesome -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-   
-<!--Animate.css-->
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
- 
-
-    <title>V Cabs-driver</title>
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+ 	 <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <title>V Cabs-driver</title>
 
     <style type="text/css">
        body{
@@ -47,10 +33,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         margin-bottom: 30px;
-        
-
       }
-
       .head h1{
         padding-top: 30px;
         padding-left: 10px;
@@ -62,7 +45,6 @@
         font-size: 28px;
         padding-left: 13px;
         color: white;
-        
       }
 
       .location{
@@ -70,13 +52,10 @@
         margin-top: 30px;
         display: inline-block;
       }
-
       .logo{
         margin-top: 15px;
         margin-bottom: 15px;
-
       }
-
 
      .footicon{
       float: right;
@@ -86,8 +65,6 @@
      }
 
      .nav_p{
-
-     
       font-size: 25px;
       color: white;
       margin-top: 5px;
@@ -99,11 +76,9 @@
      }
 
      .mybtn{
-      
       margin-left: 15px;
       height: 40px;
       font-weight: bold;
-
      }
 
      .detail{
@@ -112,7 +87,6 @@
      }
 	.maincard{
       margin: 50px;
-
      }
 
      .card-title{
@@ -137,23 +111,23 @@
        transition: 0.5s;
      }
      
-        .mybtn1 span:after {
-         content: '\00bb';
-        position: absolute;
-         opacity: 0;
-        top: 0;
-         right: -20px;
-         transition: 0.5s;
+     .mybtn1 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
       }
      
-           .mybtn1:hover span {
-           padding-right: 25px;
-       		}
-     
-        .mybtn1:hover span:after {
-	       opacity: 1;
-	       right: 0;
-     	}
+     .mybtn1:hover span {
+     	padding-right: 25px;
+ 		}
+
+   .mybtn1:hover span:after {
+	   opacity: 1;
+	   right: 0;
+     }
     </style>
 
   </head>
@@ -163,18 +137,15 @@ ResultSet rs = null;
 Statement statement = null;
 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/spring","root","");
 statement = connection.createStatement(); 
-/* String query = "SELECT * From booking,customer where booking.driver_id=1 and booking.booking_id = customer.booking_id ORDER BY customer.id DESC LIMIT 1" ; */
 String query = "SELECT * From booking,customer where booking.booking_id = customer.booking_id ORDER BY customer.id DESC LIMIT 1" ;
 ResultSet resultset = statement.executeQuery(query); %>
-        <% while(resultset.next()){ %>
-
-      <% String temp3 =  resultset.getString(5) ;
+        <% while(resultset.next()){ 
+       String temp3 =  resultset.getString(5) ;
         String temp4 =  resultset.getString(6);
         String vehicleType = resultset.getString(7);%>
+        
   <div class="card maincard">
   <div class="card-body">
- <%-- result is : <% out.printl(com.akj.carproj.LatLng.Coordinates.temp()); %> --%>
-
    <div class="row">
   <div class="col-sm-6">
     <div class="card">
@@ -183,40 +154,33 @@ ResultSet resultset = statement.executeQuery(query); %>
         <br>
        
          <form>
-   <div class="form-row">
-    <div class="form-group col-md-12">
-      <label ><i class="fas fa-circle" style="color: green;"></i>Picked Location</label> <br>
-      <strong><%=resultset.getString(5)  %></strong>
-      <input type="hidden" name="city" id="city" value=""/>
-    </div>
-    <div class="form-group col-md-12">
-      <label ><i class="fas fa-circle" style="color: red;"></i>Destination Location</label> <br>
-      <strong><%=resultset.getString(6)  %></strong>
-    </div>
-  </div>
+		   <div class="form-row">
+		    <div class="form-group col-md-12">
+		      <label ><i class="fas fa-circle" style="color: green;"></i>Picked Location</label> <br>
+		      <strong><%=resultset.getString(5)  %></strong>
+		      <input type="hidden" name="city" id="city" value=""/>
+		    </div>
+		    <div class="form-group col-md-12">
+		      <label ><i class="fas fa-circle" style="color: red;"></i>Destination Location</label> <br>
+		      <strong><%=resultset.getString(6)  %></strong>
+		    </div>
+		  </div>
 
-<button id="btnSubmit" onclick="return calcRoute();" type="button" class="btn btn-primary " style="vertical-align:middle">Track Ride</button>
-
-<a href="/newPayment"><button type="button" class="btn btn-success mybtn1" style="vertical-align:middle"><span>Payment</span></button></a> 
-
-     </form>
+		<button id="btnSubmit" onclick="return calcRoute();" type="button" class="btn btn-primary " style="vertical-align:middle">Track Ride</button>
+		
+		<a href="/newPayment"><button type="button" class="btn btn-success mybtn1" style="vertical-align:middle"><span>Payment</span></button></a> 
+		
+	</form>
         <br>
-         
-         
-  
       </div>
     </div>
   </div>
-
-
-	 
 
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
        <!-- Maps Goes Here-->
     <div id="map" class="z-depth-1-half map-container" style="height: 500px"></div>
-
       </div>
     </div>
   </div>
@@ -224,46 +188,15 @@ ResultSet resultset = statement.executeQuery(query); %>
 
  <div class="card" style="margin-top: 20px; font-style: italic;">
       <div class="card-body">
-        
-        <p style="font-size: 24px;"><img src="assests/lg3.png" width="90" height="90" class="d-inline-block "><u class="float-right" >Welcome .. <p>${main}</p></u></p><br>
+        <p style="font-size: 24px;"><img src="assests/lg3.png" width="90" height="90" class="d-inline-block "><u class="float-right" >Welcome .. <p>${sessionScope.Customerusername }</p></u></p><br>
         <p>We Hope You will get your ride Fast.</p>
-
         <p>We Welcome all of your Feedbacks which help us to become better..</p>
-
         <a href="/" type="button" class="btn btn-primary float-right"  data-toggle="tooltip" data-placement="bottom" title="This will not Cancel your Ride">Back to Home</a>
-
         <p>Thank You</p>
-
-       
       </div>
-
-
-
   </div>
 </div>
 </div>
-
-
-<br>
-<!-- Footer starts-->
-<!-- 
-<div class="jumbotron jumbotron-fluid" style="background-color: #282C35; color: white;">
-</div>
-
-
-
-
-<div class="last">
- &copy; V CABS 2020. All Rights Reserved.
-  <div class="footicon" style="margin-bottom: 10px;">
-    <a href="" target="_blank"><i style="font-size:28px; margin-right: 10px; " class="fa">&#xf082;</i></a>
-    <a href=""><i style="font-size:28px; margin-right: 10px;" class="fa">&#xf099;</i></a>
-    <a href=""><i style="font-size:28px;" class="fa">&#xf16d;</i></a>
- </div>
-
-</div> -->
-
- 
 
 <!--Footer Ends-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -284,7 +217,6 @@ ResultSet resultset = statement.executeQuery(query); %>
 	var pickupDest = "<%= temp3 %>";
 	var cityName = "<%= temp4 %>";
 	console.log("pik"+pickupDest);
-	//alert(pickupDest);
     var ansvalue;
     var vehicleType = "<%= vehicleType %>";
     const autoAns =  vehicleType.localeCompare("auto");
@@ -351,7 +283,6 @@ ResultSet resultset = statement.executeQuery(query); %>
     
     <% } %>
 
-	
     var map;
     var directionDisplay;
     var directionsService;
