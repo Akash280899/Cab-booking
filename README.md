@@ -10,6 +10,7 @@ Technologies used:
 * Software used: `STS(Spring Tool Suite), WampServer(MySQL)`
 * Payment API: `Stripe API`
 * Maps API: `Google Maps`
+* SMS API: `Textlocal API`
 
 This application manages the customer and driver as user friendly.
 
