@@ -347,6 +347,7 @@ ResultSet resultset = statement.executeQuery(query); %>
         <input id="bookingId" name="bookingId" type="hidden" value=""/>
         <input type="submit" value="Sign In" style="display:none">
         <input name="status" value="pending" style="display:none"/>
+        <input type="hidden" name="phonenumber" value="${sessionScope.Phone }">
         <c:choose>
 	  <c:when test="${log == 'yes'}">
 	    	 <button type="submit" class="btn btn-primary btn-lg btn-block mybtn" style="vertical-align:middle">Book Cab</button>   
