@@ -25,7 +25,16 @@ public class Customer {
 	private int driverId;
 	private String bookingId;
 	private String status;
+	private String phonenumber;
 	
+
+	public String getPhonenumber() {
+		return phonenumber;
+	}
+
+	public void setPhonenumber(String phonenumber) {
+		this.phonenumber = phonenumber;
+	}
 
 	public String getStatus() {
 		return status;
