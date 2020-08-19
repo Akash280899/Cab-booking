@@ -4,17 +4,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <title>V CABS</title>
-     <link rel="icon" href="/assests/lg3.png" type="image/png" sizes="16x16">
+	 <link rel="icon" href="/assests/lg3.png" type="image/png" sizes="16x16">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style type="text/css">
@@ -30,56 +28,50 @@
 
      @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-	fieldset, label { margin: 0; padding: 0; }
-	body{ margin: 20px; }
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
 
 
-	/****** Style Star Rating Widget *****/
+/****** Style Star Rating Widget *****/
 
-	.rating { 
-	  border: none;
-	  float: right;
-	}
+.rating { 
+  border: none;
+  float: right;
+}
 
-	.rating > input { display: none; } 
-	.rating > label:before { 
-	  margin: 5px;
-	  font-size: 1.25em;
-	  font-family: FontAwesome;
-	  display: inline-block;
-	  content: "\f005";
-	}
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
 
-	.rating > .half:before { 
-	  content: "\f089";
-	  position: absolute;
-	}
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
 
-	.rating > label { 
-	  color: #ddd; 
-	 float: right; 
-	}
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
 
 /***** CSS Magic to Highlight Stars on Hover *****/
 
-	.rating > input:checked ~ label, /* show gold star when clicked */
-	.rating:not(:checked) > label:hover, /* hover current star */
-	.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
 
-	.rating > input:checked + label:hover, /* hover current star when changing rating */
-	.rating > input:checked ~ label:hover,
-	.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-	.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
-
-
-    
-
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
     </style>
-
     </head>
   <body >
-    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <!-- Image and text -->
 <nav class="navbar navbar-dark bg-dark">
@@ -111,13 +103,10 @@
       </li>
 
        <li class="nav-item ">
-        <a class="nav-link active" href="/review"><i class="fas fa-comments"></i></i><strong> REVIEW </strong><span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href="/review"><i class="fas fa-comments"></i><strong> REVIEW </strong><span class="sr-only">(current)</span></a>
       </li>
       
     </ul>
-
-   
-    
   </div>
 </nav>
 
@@ -127,15 +116,12 @@
 <div class="alert alert-danger" role="alert" id="alert1" style="margin-top: 30px; display: none;">
   <p><b>Please Enter the Feedback first</b></p> 
 </div>
-
-
 <div class="row">
-  
   <div class="col-sm-8">
     <div class="card" style="margin-top: 80px; margin-left: 40px;">
       <div class="card-body">
         <h4 class="card-title">We are Happy to have you</h4>
-        <p class="card-text">With your constant suppost and feedbacks we grow each time and become better for you<br>Its you and ypur best wishes which drives us way closer to our journey and we hope your every journey with us become exciting and relaxing as ours with you.</p>
+        <p class="card-text">With your constant support and feedbacks we grow each time and become better for you<br>Its you and your best wishes which drives us way closer to our journey and we hope your every journey with us become exciting and relaxing as ours with you.</p>
         <h5 class="card-title">Help us with your Feed back</h5>
         <hr>
          <fieldset class="rating" style="opacity: 1;">
@@ -175,13 +161,10 @@
     
   </div>
 </div>
-
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <script type="text/javascript">
 
     	var click = false;
@@ -211,11 +194,6 @@
           }
 
     	});
-
-
     </script>
-
-   
-
   </body>
 </html>
