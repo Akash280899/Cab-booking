@@ -102,6 +102,7 @@
        </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="/admin">
@@ -164,7 +165,7 @@
 	  </div>
 	  <div class="form-group">
 	    <label for="inputAddress">Username</label>
-	    <input type="text" class="form-control" id="inputLocation" placeholder="Enter Driver name.." name="username" autocomplete="off">
+	    <input type="text" class="form-control" id="driverName" placeholder="Enter Driver name.." name="username" autocomplete="off">
 	  </div>
 	  <div class="form-group">
 	    <label for="inputAddress">Password</label>
@@ -174,7 +175,7 @@
     <input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }" />
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <button id="btnAdd" type="submit" class="btn btn-primary">Sign Up</button>
         </div>
         </form>
         </div>
@@ -194,17 +195,27 @@
         <form action="delete-driver" method="post">
 	  <div class="form-group">
 	    <label for="inputAddress">Driver Id</label>
-	    <input type="text" class="form-control" id="inputLocation" placeholder="Enter Driver Id to delete.." name="driverId1" autocomplete="off">
+	    <input type="text" class="form-control" id="driverId" placeholder="Enter Driver Id to delete.." name="driverId1" autocomplete="off">
 	  </div>
     <input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }" />
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button id="btnDelete" type="submit" class="btn btn-success">Submit</button>
         </div>
         </form>
         </div>
       </div>
     </div>
   </div>
+  <script>
+	$("#btnAdd").click(function(){
+		var name = document.getElementById('driverName').value;
+		alert("Driver " + name +" added successfully.");
+		});
+	$("#btnDelete").click(function() {
+		var id = document.getElementById('driverId').value;
+		alert("DriverId: " + id +" deleted successfully.");
+		})
+  </script>
 </body>
 </html>
