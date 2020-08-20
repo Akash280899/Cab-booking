@@ -188,7 +188,7 @@ ResultSet resultset = statement.executeQuery(query); %>
 
  <div class="card" style="margin-top: 20px; font-style: italic;">
       <div class="card-body">
-        <p style="font-size: 24px;"><img src="assests/lg3.png" width="90" height="90" class="d-inline-block "><u class="float-right" >Welcome .. <p>${sessionScope.Customerusername }</p></u></p><br>
+        <p style="font-size: 24px;"><img src="assests/lg3.png" width="90" height="90" class="d-inline-block "><u class="float-right" >Welcome .. ${sessionScope.Customerusername }</u></p><br>
         <p>We Hope You will get your ride Fast.</p>
         <p>We Welcome all of your Feedbacks which help us to become better..</p>
         <a href="/" type="button" class="btn btn-primary float-right"  data-toggle="tooltip" data-placement="bottom" title="This will not Cancel your Ride">Back to Home</a>
