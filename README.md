@@ -14,7 +14,7 @@ Technologies used:
 
 This application manages the customer and driver as user friendly.
 
-# Live Project Video => https://vimeo.com/448915703 
+# Live Project Video => https://drive.google.com/file/d/14vvLAdfAMvK4ZW6WYoUIfYn-bKugd3-N/view?usp=sharing
 
 * For more Info about `Stripe API`: https://stripe.com/docs
 * For more Info about `Maps API`: https://developers.google.com/maps/documentation
