@@ -111,7 +111,7 @@ body{ margin: 20px; }
 </nav>
 
 <div class="alert alert-success" role="alert" id="alert" style="margin-top: 30px; display: none;">
-  <p><b>Thank You for Your Feedback..!!</b><br>Happy Riding</p> 
+  <p><b>Thank You for Your Feedback..!!</b><br>Happy Riding..Redirecting to HomePage in 3Seconds..</p> 
 </div>
 <div class="alert alert-danger" role="alert" id="alert1" style="margin-top: 30px; display: none;">
   <p><b>Please Enter the Feedback first</b></p> 
