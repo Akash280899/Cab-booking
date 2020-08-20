@@ -142,6 +142,7 @@
             <button type="button" class="btn btn-success btn-lg mybtn" style="vertical-align:middle" data-toggle="modal" data-target="#exampleModalCenter"><span>Add Driver</span></button> 
             <button type="button" class="btn btn-danger btn-lg mybtn" style="vertical-align:middle" data-toggle="modal" data-target="#exampleModalCenter1"><span>Delete Driver</span></button>
              <button onclick="location.href='/userDetails';" type="button" class="btn btn-primary btn-lg mybtn" style="vertical-align:middle" ><span>See Booking Details</span></button>
+          	
           	</c:when>
           	<c:otherwise>
           		<p class="bounceIn animated">Login to Continue...</p> 
@@ -190,7 +191,34 @@
         <h5 class="modal-title" id="exampleModalLongTitle">Delete Driver Profile</h5>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
-      
+      	<div class="container">        
+				  <table class="table">
+				    <thead>
+				      <tr>
+				        <th>Driver Id</th>
+				        <th>Driver Name</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				     <% 
+						String temp1 =  null;
+						String temp2 =   null;
+						Statement statement = null;
+						Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/spring","root","");
+						statement = connection.createStatement(); 
+						String query = "SELECT * FROM driver;" ;
+						ResultSet resultset = statement.executeQuery(query); %>
+						        <% 
+						        while(resultset.next()){ 
+						        temp1 =  resultset.getString(2) ;
+						        temp2 =  resultset.getString(3);%>
+				      <tr>
+				        <td><%=temp1 %></td>
+				        <td><%=temp2 %></td> <% } %>
+				      </tr>
+				    </tbody>
+				  </table>
+				</div>
       <div class="modal-body">
         <form action="delete-driver" method="post">
 	  <div class="form-group">
