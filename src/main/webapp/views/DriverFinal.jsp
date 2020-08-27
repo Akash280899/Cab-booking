@@ -277,12 +277,7 @@ ResultSet resultset = statement.executeQuery(query); %>
 <!-- Footer starts-->
 
 <div class="jumbotron jumbotron-fluid" style="background-color: #282C35; color: white;">
-</div>
-
-
-
-
-<div class="last">
+	<div class="last">
  &copy; V CABS 2020. All Rights Reserved.
   <div class="footicon" style="margin-bottom: 10px;">
     <a href="https://www.facebook.com/janaki.akash.7" target="_blank"><i style="font-size:28px; margin-right: 10px; " class="fa">&#xf082;</i></a>
@@ -291,8 +286,7 @@ ResultSet resultset = statement.executeQuery(query); %>
  </div>
 
 </div>
-
- 
+</div>
 
 <!--Footer Ends-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
