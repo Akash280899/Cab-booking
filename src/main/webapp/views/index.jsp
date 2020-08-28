@@ -203,33 +203,33 @@ ResultSet resultset = statement.executeQuery(query); %>
         <form action="save-user" method="post">
          <div class="form-group">
 		    <label for="Name">Name</label>
-		    <input type="text" class="form-control" id="name" placeholder="Name" name="username" autocomplete="off">
+		    <input type="text" class="form-control" id="name" placeholder="Name" name="username" autocomplete="off" required>
 		  </div>
 		  <div class="form-row">
 		    <div class="form-group col-md-6">
 		      <label for="inputEmail4">Email</label>
-		      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email" >
+		      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email" required>
 		    </div>
 		    <div class="form-group col-md-6">
 		      <label for="inputPassword4">Password</label>
-		      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password">
+		      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password" required>
 		    </div>
 		  </div>
 		  
   <div class="form-group">
     <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputLocation" placeholder="Address" name="address" autocomplete="off">
+    <input type="text" class="form-control" id="inputLocation" placeholder="Address" name="address" autocomplete="off" required>
   </div>
 
   <div class="form-group">
     <label for="inputAddress">Phone Number</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Mobile number" name="phonenumber" autocomplete="off">
+    <input type="text" class="form-control" id="inputAddress" placeholder="Mobile number" name="phonenumber" autocomplete="off" required>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity" placeholder="City" name="city" autocomplete="off">
+      <input type="text" class="form-control" id="inputCity" placeholder="City" name="city" autocomplete="off" required>
     </div> 
     <div class="form-group col-md-4">
       <label for="inputState">State</label>
@@ -276,7 +276,7 @@ ResultSet resultset = statement.executeQuery(query); %>
   </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <button id="btnSubmit" type="submit" class="btn btn-primary">Sign Up</button>
         </div>
         
         </form>
@@ -380,10 +380,10 @@ ResultSet resultset = statement.executeQuery(query); %>
 </div>
 <!-- Footer starts-->
 <div class="jumbotron jumbotron-fluid" style="background-color: #282C35; color: white;">
-	<div class="last">
+<div class="last">
  &copy; V CABS 2020. All Rights Reserved.
   <div class="footicon" style="margin-bottom: 10px;">
-    <a href="https://www.facebook.com/janaki.akash.7" target="_blank"><i style="font-size:28px; margin-right: 10px; " class="fa">&#xf082;</i></a>
+    <a href="https://www.facebook.com/janaki.akash.7" target="_blank"><i style="font-size:28px; margin-right: 10px;" class="fa">&#xf082;</i></a>
     <a href="https://twitter.com/AkashIyer28"><i style="font-size:28px; margin-right: 10px;" class="fa">&#xf099;</i></a>
     <a href="https://www.instagram.com/akash_iyer_/"><i style="font-size:28px;" class="fa">&#xf16d;</i></a>
  </div>
