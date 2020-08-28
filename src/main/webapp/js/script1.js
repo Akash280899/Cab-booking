@@ -1,4 +1,9 @@
- var markers = [];
+$(document).ready(function(){
+ $("#btnSubmit").click(function(){
+		alert("Registered Successfully. Try to login!!");
+});
+}); 
+var markers = [];
       function myFunction() {}
       function generateRandomPoints(center, radius, count) {
               var points = [];
